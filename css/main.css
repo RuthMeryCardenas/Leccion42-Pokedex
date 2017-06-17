@@ -1,7 +1,8 @@
 /*UTILITARIOS*/
 .item-pokemon {
   position: relative;
-  width: 16%;
+  width: 15%;
+  margin: 0 2.5%;
 }
 .item-pokemon .trapeze {
   border-bottom: 70px solid #ffffff;
@@ -26,17 +27,17 @@
   font-weight: bold;
 }
 /*SECCIÓN SEARCH*/
-.search .col:nth-child(2) {
+#search .col:nth-child(2) {
   margin-left: 0;
 }
-.searcher i.prefix {
+#search .searcher i.prefix {
   margin-top: 1rem;
 }
 /*SECCIÓN RESULT*/
-.result .row {
+#results .row {
   margin-bottom: 2rem;
 }
-.result .row .col {
+#results .row .col {
   display: flex;
-  justify-content:space-between;
+  justify-content: center;
 }
