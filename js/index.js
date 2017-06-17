@@ -17,7 +17,8 @@ const state = {
 $( _ => {
   getJSON('http://pokeapi.co/api/v2/pokedex/1/', (err, json) => {
     if (err) { return alert(err.message);}
-    state.pokemons = json;
+    state.pokemons = json.pokemon_entries;
+    // console.log(state.pokemons);
     const root = $('.root');
     render(root);
     // console.log(state.pokemons);
