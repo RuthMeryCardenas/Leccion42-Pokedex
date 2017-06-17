@@ -19,14 +19,10 @@ const Search = () => {
   row.append(col_1);
   row.append(col_2);
   search.append(row);
-  // input.on("keypress", (e) => {
-  //   if (e.which === 13) {
-  //     if (input.val() != "") {
-  //       filterByDistrict ($(".list-stations"), input.val());
-  //     }else {
-  //       reRender ($(".list-stations"));
-  //     }
-  //   }
-  // });
+
+  input.on('keyup',(e) => {
+    reRender($(".list-pokemon"), input.val());
+  });
+  reRender($(".list-pokemon"),"");
   return search;
 }
