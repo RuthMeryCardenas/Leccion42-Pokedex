@@ -1,9 +1,10 @@
 .row,
 .modal {
+  top: 12%;
   width: 80%;
 }
 .modal {
-  max-height: 80%;
+  max-height: 85%;
 }
 /*UTILITARIOS*/
 .item-pokemon {
@@ -66,6 +67,23 @@
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
 }
-#modal1 .information > div{
-  height: 33.3%;
+#modal1 .description{
+  height: 30%;
+}
+#modal1 .description p {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 0;
+}
+#modal1 .details {
+  height: 30%;
+}
+#modal1 .more {
+  height: 40%;
+  padding: 1rem;
+}
+#modal1 .modal-close{
+  float: right;
+  font-size: 5rem;
+  top: 0.5rem;
 }
