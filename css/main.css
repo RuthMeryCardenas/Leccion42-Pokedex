@@ -1,0 +1,89 @@
+.row,
+.modal {
+  top: 12%;
+  width: 80%;
+}
+.modal {
+  max-height: 85%;
+}
+/*UTILITARIOS*/
+.item-pokemon {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+.item-pokemon .container-img{
+  height: 75%;
+  padding: 1rem;
+}
+.item-pokemon .container-img img{
+  width: 100%;
+  height: 100%;
+}
+.item-pokemon .trapeze {
+  border-bottom: 70px solid #ffffff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+}
+.item-pokemon .user-action {
+  bottom: 0;
+  height: 25%;
+  position: absolute;
+  width: 100%;
+}
+.item-pokemon .container-icons {
+  padding-top: 0.5rem
+}
+.item-pokemon .container-icons img{
+  width: 15%;
+}
+.item-pokemon .name-pokemon {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/*SECCIÓN SEARCH*/
+#search .searcher i.prefix {
+  margin-top: 1rem;
+}
+/*SECCIÓN RESULT*/
+#results .col{
+  padding: 1rem;
+  height: 300px;
+}
+#results .l2{
+  width: 20%;
+}
+/*MODAL*/
+#modal1 .photo,
+#modal1 .information{
+  height: 400px;
+}
+#modal1 .col{
+  padding: 1rem;
+}
+#modal1 .item-pokemon .trapeze {
+  border-bottom: 92.5px solid #ffffff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+#modal1 .description{
+  height: 30%;
+}
+#modal1 .description p {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 0;
+}
+#modal1 .details {
+  height: 30%;
+}
+#modal1 .more {
+  height: 40%;
+  padding: 1rem;
+}
+#modal1 .modal-close{
+  float: right;
+  font-size: 5rem;
+  top: 0.5rem;
+}
