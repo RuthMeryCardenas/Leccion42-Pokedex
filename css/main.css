@@ -1,17 +1,19 @@
-.row {
+.row,
+.modal {
   width: 80%;
+}
+.modal {
+  max-height: 80%;
 }
 /*UTILITARIOS*/
 .item-pokemon {
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  height: 100%;
   position: relative;
-  width: 20%;
-  height: 300px;
-  padding: 0 1rem;
 }
 .item-pokemon .container-img{
-  height: 230px;
+  height: 75%;
+  padding: 1rem;
 }
 .item-pokemon .container-img img{
   width: 100%;
@@ -25,7 +27,7 @@
 }
 .item-pokemon .user-action {
   bottom: 0;
-  height: 70px;
+  height: 25%;
   position: absolute;
   width: 100%;
 }
@@ -44,6 +46,26 @@
   margin-top: 1rem;
 }
 /*SECCIÓN RESULT*/
-#results .row {
-  display: flex;
+#results .col{
+  padding: 1rem;
+  height: 300px;
+}
+#results .l2{
+  width: 20%;
+}
+/*MODAL*/
+#modal1 .photo,
+#modal1 .information{
+  height: 400px;
+}
+#modal1 .col{
+  padding: 1rem;
+}
+#modal1 .item-pokemon .trapeze {
+  border-bottom: 92.5px solid #ffffff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+#modal1 .information > div{
+  height: 33.3%;
 }
