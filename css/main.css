@@ -1,10 +1,7 @@
-.row,
-.modal {
-  top: 12%;
+.wrapper,
+.modal-content {
   width: 80%;
-}
-.modal {
-  max-height: 85%;
+  margin: auto;
 }
 /*UTILITARIOS*/
 .item-pokemon {
@@ -55,35 +52,48 @@
   width: 20%;
 }
 /*MODAL*/
-#modal1 .photo,
-#modal1 .information{
+#modal1 {
+  width: 80%;
+  max-height: 85%;
+}
+#modal1 .modal-close{
+  position: absolute;
+  margin : 24px;
+  right: 0;
+  font-size: 2.5rem;
+}
+#modal1 .photo{
   height: 400px;
 }
-#modal1 .col{
-  padding: 1rem;
-}
 #modal1 .item-pokemon .trapeze {
-  border-bottom: 92.5px solid #ffffff;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-}
-#modal1 .description{
-  height: 30%;
+  border-bottom: 100px solid #ffffff;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
 }
 #modal1 .description p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.25;
   margin: 0;
 }
-#modal1 .details {
-  height: 30%;
+#modal1 .details{
+  overflow: auto;
 }
-#modal1 .more {
-  height: 40%;
-  padding: 1rem;
+#modal1 .information > div{
+  margin-bottom: 1rem;
 }
-#modal1 .modal-close{
-  float: right;
-  font-size: 5rem;
-  top: 0.5rem;
+#modal1 .detail{
+  float: left;
+  width: 35%;
+  padding: 0.5rem 1rem;
 }
+#modal1 .detail span{
+  display: block;
+}
+#modal1 .type span,
+#modal1 .debility span{
+  padding: 0.25rem 2rem;
+  margin-right: 1rem;
+}
+/*#modal1 .detail span:nth-child(2){
+  color: red;
+}*/
