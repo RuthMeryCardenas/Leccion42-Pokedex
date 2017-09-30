@@ -20,7 +20,7 @@ const Results = (update) => {
 const List_pokemon = (pokemons, update) => {
   const list_pokemon = $("<div class='row list-pokemon'></div>");
   pokemons.forEach ((pokemon) => {
-    const col = $("<div class='col l2'></div>");
+    const col = $("<div class='col s6 l2'></div>");
     col.append(Item_pokemon(pokemon.entry_number,pokemon.pokemon_species.name));
     list_pokemon.append(col);
     });
@@ -29,7 +29,7 @@ const List_pokemon = (pokemons, update) => {
 const Item_pokemon = (id_pokemon,name_pokemon) => {
   const item_pokemon = $("<div class='item-pokemon grey lighten-2'></div>");
   const container_img = $("<div class='container-img'></div>");
-  const img_pokemon = $("<img src='http://serebii.net/art/th/" + (id_pokemon) + ".png' alt=''></img>");
+  const img_pokemon = $("<img src='https://serebii.net/art/th/" + (id_pokemon) + ".png' alt=''></img>");
   const trapeze = $("<div class='trapeze'></div>");
 
   container_img.append(img_pokemon);

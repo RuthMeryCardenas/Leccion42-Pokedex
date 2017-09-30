@@ -7,17 +7,12 @@ const load_data_pokemon = {
       startingTop: '4%', // Starting top style attribute
       endingTop: '10%', // Ending top style attribute
       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-        console.log("open");
-        console.log(state.selectedPokemon);
         get_data_pokemon (state.selectedPokemon);
-        // console.log(modal, trigger);
       },
-      complete: function() {
+      complete: function() {// Callback for Modal close
         reRender_data();
         state.selectedPokemon = null;
-        console.log(state.selectedPokemon);
-        console.log("closed");
-      } // Callback for Modal close
+      }
     }
 const reRender_data = () => {
   $(".modal-content .name h3").empty();
